@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-bottom: 1rem;
+
+  padding: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.25rem;
+  background-color: var(--gray-400);
+
+  box-sizing: border-box;
+}
+
+.container label {
+  color: var(--gray-100);
+  flex: 1;
+}
+
+.container:has(input:checked) {
+  border: none;
+}
+
+.container input:checked + label {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.container DeleteButton {
+  border: 1px solid red;
+}
